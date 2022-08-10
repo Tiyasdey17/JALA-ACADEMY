@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <h2>Welcome To GFG</h2>
+    <p id="Accessingobj"></p>
+  
+    <script>
+        var myOrder, i;
+        myOrder = {
+            "name_of_product": "earbuds", 
+            "cost": "799",
+            "warranty": "1 year"
+        };
+  
+        // Accessing object using [] notation
+        i = myOrder["name_of_product"];
+  
+        document.getElementById(
+            "Accessingobj").innerHTML = i;
+    </script>
+</body>
+  
+</html>
