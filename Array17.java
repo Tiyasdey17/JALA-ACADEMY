@@ -1,16 +1,22 @@
-import java.util.Arrays; 
- public class Exercise27 {
- public static void main(String[] args)
- {
-    int[] array_nums = {5, 7, 2, 4, 9};
-	System.out.println("Original Array: "+Arrays.toString(array_nums)); 
-	int ctr = 0;
-	for(int i = 0; i < array_nums.length; i++)
-	{
-		if(array_nums[i] % 2 == 0)
-			ctr++;
-	}
-	System.out.println("Number of even numbers : "+ctr);
-	System.out.println("Number of odd numbers  : "+(array_nums.length-ctr));
- }
+public class Exercise33 {    
+   public static void main(String[] args) {
+        int nums[] = {20, 20, 30, 40, 50, 50, 50};  
+		System.out.println("Original array length: "+nums.length);
+		System.out.print("Array elements are: ");
+       for (int i = 0; i < nums.length; i++)
+        {
+            System.out.print(nums[i]+" ");
+        }
+		System.out.println("\nThe new length of the array is: "+array_sort(nums));
+			
+    }
+    
+    public static int array_sort(int[] nums) {
+         int index = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[index-1])
+                nums[index++] = nums[i];
+        }
+	  return index;
+    }
 }
